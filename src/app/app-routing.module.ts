@@ -6,7 +6,7 @@ import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'details', component: DetailsComponent }, // Update from 'dashboard' to 'details'
+  { path: 'details', component: DetailsComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
