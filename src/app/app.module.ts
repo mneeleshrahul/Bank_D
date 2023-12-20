@@ -7,11 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DetailsComponent } from './details/details.component';
+import { NewApiService } from './new-api.service';
+import { EmployeeComponent } from './employee/employee.component';
+ 
+
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DetailsComponent],
+  declarations: [AppComponent, LoginComponent, DetailsComponent, EmployeeComponent],
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
-  providers: [],
+  providers: [NewApiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
