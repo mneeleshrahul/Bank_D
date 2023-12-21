@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CustomerService {
-  private apiUrl = 'your_backend_api_url';
+  private apiUrl = 'https://retoolapi.dev/5qhU8q/data';
 
   constructor(private http: HttpClient) { }
 
   getCustomerDetails(): Observable<any> {
     // Assuming your backend API endpoint for customer details is '/customer'
-    return this.http.get(`${this.apiUrl}/customer`);
+    return this.http.get(`${this.apiUrl}`);
   }
 }

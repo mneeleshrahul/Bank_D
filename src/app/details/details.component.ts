@@ -24,11 +24,11 @@ export class DetailsComponent implements OnInit {
       this.authService.getCustomerDetails(customerId, customerEmail, currentBalance).subscribe(
         (details: any) => {
           this.customerDetails = details;
+          console.log(details);
         },
         (error) => {
           console.error('Details error:', error);
         }
-        
       );
     });
   }

@@ -16,8 +16,10 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   submitForm(): void {
+
     this.authService.login(this.username, this.password).subscribe(
       (success: boolean) => {
+        console.log (success)
         if (success) {
           // Successful login, navigate to the details page
           this.router.navigate(['/details']);
