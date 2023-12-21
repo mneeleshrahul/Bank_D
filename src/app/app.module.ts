@@ -9,9 +9,6 @@ import { LoginComponent } from './login/login.component';
 import { DetailsComponent } from './details/details.component';
 
 
- 
-
-
 @NgModule({
   declarations: [AppComponent, LoginComponent, DetailsComponent,],
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
